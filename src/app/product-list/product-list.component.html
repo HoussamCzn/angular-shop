@@ -19,6 +19,11 @@
     <button type="button" (click)="share()">
       Share
     </button>
+
+    <!-- this will display the "Notify Me" button if the product's price is over $700 (see "product-alerts" folder) -->
+    <app-product-alerts
+      [product]="product">
+    </app-product-alerts>
 </div>
 
 <!-- 
