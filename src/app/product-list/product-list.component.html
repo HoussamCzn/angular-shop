@@ -21,8 +21,10 @@
     </button>
 
     <!-- this will display the "Notify Me" button if the product's price is over $700 (see "product-alerts" folder) -->
+    <!-- Clicking on the "Notify Me" button will trigger the onNotify() method (see product-list.component.ts) -->
     <app-product-alerts
-      [product]="product">
+      [product]="product" 
+      (notify)="onNotify()">
     </app-product-alerts>
 </div>
 
