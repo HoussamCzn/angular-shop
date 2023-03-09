@@ -4,9 +4,13 @@
     <h3>
         <!-- this is a link to the product details page -->
         <!-- the [title] attribute set the product name as the title of the link -->
-        <a [title]="product.name + ' details'">
+        <!-- the [routerLink] attribute is a directive that will add in this case the product ID to the URL -->
+        <!-- (e.g: http://localhost:4200/products/1) -->
+        <a
+          [title]="product.name + ' details'"
+          [routerLink]="['/products', product.id]">
           {{ product.name }}
-        </a>
+      </a>
     </h3>
 
     <!-- this is the product's description -->
