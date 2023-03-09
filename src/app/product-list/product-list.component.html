@@ -8,6 +8,12 @@
           {{ product.name }}
         </a>
       </h3>
+
+      <!-- this is the product's description -->
+      <!-- *ngIf is a directive that will process the data only if the condition (in this case, having a description) is true -->
+      <p *ngIf="product.description">
+        Description: {{ product.description }}
+      </p>
 </div>
 
 <!-- 
