@@ -1,1 +1,8 @@
-<p>shipping works!</p>
+<h3>Shipping Prices</h3>
+
+<!-- This will display the shipping types and prices -->
+<!-- "async" pipe will wait for the shippingCosts to be available -->
+<div class="shipping-item" *ngFor="let shipping of shippingCosts | async">
+  <span>{{ shipping.type }}</span>
+  <span>{{ shipping.price | currency }}</span>
+</div>
